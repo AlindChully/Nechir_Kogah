@@ -51,7 +51,7 @@ products.forEach((item, index) => {
     card.innerHTML = `
         <img src="image/${index + 1}.jpeg" class="product" alt="Color Space Infinity">
         <div class="product-name">Color Space Infinity</div>
-        <div class="shade-number">${item.code}</div>
+        <div class="shade-number">Code: ${item.code}</div>
         <div class="color-circle" style="background:${item.color}; box-shadow: 0 0 15px ${item.color}80;"></div>
     `;
     container.appendChild(card);
