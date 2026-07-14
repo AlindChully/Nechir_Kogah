@@ -196,6 +196,15 @@ footer p {
     margin: 6px;
 }
 
+footer a {
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #128c7e !important;
+    text-decoration: underline;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }
