@@ -77,3 +77,10 @@ document.getElementById("searchColor").addEventListener("input", function() {
         card.style.display = code.includes(value) ? "block" : "none";
     });
 });
+
+window.addEventListener("orientationchange", function() {
+    // تأخير بسيط لإعطاء المتصفح فرصة لحساب الأبعاد الجديدة ثم عمل ريفرش
+    setTimeout(function() {
+        window.location.reload();
+    }, 500);
+});
