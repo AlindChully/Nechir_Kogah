@@ -263,7 +263,7 @@ footer a:hover {
     }
 
    .logo-img {
-        height: 45px;
+        height: 60px;
         transition: height 0.3s ease;
     }
 }
@@ -276,7 +276,7 @@ footer a:hover {
     }
 
    .logo-img {
-        height: 45px;
+        height: 60px;
         transition: height 0.3s ease;
     }
 
@@ -323,8 +323,3 @@ footer a:hover {
     }
 }
 
-@media(max-width: 400px) {
-    .logo-img {
-        height: 35px;
-    }
-}
