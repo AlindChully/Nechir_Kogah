@@ -262,8 +262,9 @@ footer a:hover {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .logo {
-        font-size: 20px;
+   .logo-img {
+        height: 45px;
+        transition: height 0.3s ease;
     }
 }
 
@@ -271,6 +272,12 @@ footer a:hover {
     .header {
         flex-direction: column;
         gap: 20px;
+        padding: 15px 5%;
+    }
+
+   .logo-img {
+        height: 45px;
+        transition: height 0.3s ease;
     }
 
     body {
@@ -313,5 +320,11 @@ footer a:hover {
 
     .card:hover {
         transform: none;
+    }
+}
+
+@media(max-width: 400px) {
+    .logo-img {
+        height: 35px;
     }
 }
