@@ -84,7 +84,7 @@ products2.forEach((item, index) => {
     const card = document.createElement("div");
     card.className = "card";
     card.innerHTML = `
-        <img src="image/${index + 26}.jpeg" class="product" alt="Color Space Infinity">
+        <img src="image/${index + 26}.png" class="product" alt="Color Space Infinity">
         <div class="product-name">${item.name}</div>
         <div class="product-by">${brandName}</div>
     `;
