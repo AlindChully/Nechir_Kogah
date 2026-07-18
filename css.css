@@ -1,14 +1,13 @@
 /* =====================================
    Google Font & Reset
 ===================================== */
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap'); */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Cairo', sans-serif;
-}
+    font-family: 'Times New Roman', Times, serif;}
 
 html {
     scroll-behavior: smooth;
@@ -39,15 +38,25 @@ body {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    height: auto; 
+    height: auto;
     min-height: 80px;
 }
 
+.logo-img {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.05);
+}
+
 .logo {
-    font-size: 36px;
-    font-weight: 800;
-    color: #ffffff;
-    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
 }
 
 .search-box input {
@@ -155,6 +164,13 @@ body {
     color: #2563eb;
 }
 
+.product-by {
+    margin-top: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #e8b420;
+}
+
 .color-circle {
     width: 90px;
     height: 90px;
@@ -236,7 +252,7 @@ footer a:hover {
         grid-template-columns: repeat(3, 1fr);
     }
 
-   .logo {
+    .logo {
         font-size: 24px;
     }
 }
@@ -246,7 +262,7 @@ footer a:hover {
         grid-template-columns: repeat(1, 1fr);
     }
 
-   .logo {
+    .logo {
         font-size: 20px;
     }
 }
@@ -261,7 +277,7 @@ footer a:hover {
         padding-top: 150px;
     }
 
-   .logo {
+    .logo {
         font-size: 24px;
     }
 
