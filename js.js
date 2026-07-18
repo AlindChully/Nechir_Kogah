@@ -97,7 +97,12 @@ document.getElementById("searchColor").addEventListener("input", function() {
     const value = this.value.trim().toLowerCase();
     document.querySelectorAll(".card").forEach(card => {
         const code = card.querySelector(".shade-number").textContent.toLowerCase();
-        card.style.display = code.includes(value) ? "block" : "none";
+        const name = card.querySelector(".product-name").textContent.toLowerCase();
+        if (code.includes(value) || name.includes(value)) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
     });
 });
 
