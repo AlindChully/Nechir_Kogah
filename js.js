@@ -64,7 +64,7 @@ products.forEach((item, index) => {
     card.className = "card";
     card.innerHTML = `
         <img src="image/${index + 1}.jpeg" class="product" alt="Color Space Infinity">
-        <div class="product-name">${item.code}</div>
+        <div class="product-name">SPACE COLOR INFINITY</div>
         <div class="shade-number">Code: ${item.code}</div>
         <div class="color-circle" style="background:${item.color}; box-shadow: 0 0 15px ${item.color}80;"></div>
     `;
@@ -96,8 +96,10 @@ document.querySelectorAll(".card").forEach(card => observer.observe(card));
 document.getElementById("searchColor").addEventListener("input", function() {
     const value = this.value.trim().toLowerCase();
     document.querySelectorAll(".card").forEach(card => {
-        const code = card.querySelector(".shade-number").textContent.toLowerCase();
-        const name = card.querySelector(".product-name").textContent.toLowerCase();
+        const codeElement = card.querySelector(".shade-number");
+        const nameElement = card.querySelector(".product-name");
+        const code = codeElement ? codeElement.textContent.toLowerCase() : "";
+        const name = nameElement ? nameElement.textContent.toLowerCase() : "";
         if (code.includes(value) || name.includes(value)) {
             card.style.display = "block";
         } else {
