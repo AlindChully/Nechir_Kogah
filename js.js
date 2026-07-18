@@ -53,7 +53,7 @@ const products2 = [
     {name:"Royale Perfume"},
     {name:"Cologne"},
     {name:"Romance Perfume"},
-    {name:"My Shahana"},
+    {name:"Block Wax"},
 ];
 
 const container = document.getElementById("products");
