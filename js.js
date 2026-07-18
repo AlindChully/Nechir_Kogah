@@ -72,12 +72,21 @@ products.forEach((item, index) => {
 });
 
 products2.forEach((item, index) => {
+    const isRasasi = (index === 1) || 
+                     (index >= 12 && index <= 15) || 
+                     (index === 19) || 
+                     (index === 20) || 
+                     (index >= 22 && index <= 23) || 
+                     (index === 25);
+
+    const brandName = isRasasi ? "By RASASI" : "By my SHAHANA";
+
     const card = document.createElement("div");
     card.className = "card";
     card.innerHTML = `
         <img src="image/${index + 26}.jpeg" class="product" alt="Color Space Infinity">
         <div class="product-name">${item.name}</div>
-        <div class="product-by">By my SHAHANA</div>
+        <div class="product-by">${brandName}</div>
     `;
     container.appendChild(card);
 });
